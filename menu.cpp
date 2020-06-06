@@ -75,7 +75,7 @@ void Menu::cargarDatos()
 void Menu::consultarDato( )
 {
     unsigned posicion;
-    cout<<"Ingrese la posicion del objeto para ver sus datos";cin>>posicion;
+    cout<<"Ingrese la posicion del objeto para ver sus datos: ";cin>>posicion;
     if(posicion <= listaObjetos.get_tam() && posicion!= 0)
     {
         listaObjetos.get_dato(posicion)->mostrarDatos();
@@ -88,14 +88,14 @@ void Menu::consultarDato( )
 void Menu::eliminarObjeto()
 {
     unsigned posicion;
-    cout<<"Ingrese la posicion del objeto para borrarlo";cin>>posicion;
+    cout<<"Ingrese la posicion del objeto para borrarlo: ";cin>>posicion;
     if(posicion <= listaObjetos.get_tam() && posicion != 0)
     {
         listaObjetos.del_dato(posicion);
         cout<<"Se ha eliminado correctamente el objeto "<<endl;
     }
     else{
-        cout<<"La lista no tiene esa posicion"<<endl;
+        cout<<"La lista no tiene esa posicion! "<<endl;
     }
 
 }

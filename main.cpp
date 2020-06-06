@@ -63,6 +63,7 @@ int main()
         menu.mostrarOpciones();
         cout<<"Ingrese una opcion: ";cin>>opcion;
     }
+    cout<<"Hasta luego.."<<endl;
 
     return 0;
 }
