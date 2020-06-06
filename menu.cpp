@@ -5,18 +5,19 @@
 
 Menu::Menu()
 {
-    cout<<"Se creo una lista dentro del menu"<<endl;
+    cout<<"Trabajo Practico 3"<<endl;
+    cout<<"Autor : Alejo Villores"<<endl;
 }
 
 Menu::~Menu()
 {
-    cout<<"Se ha eliminado la lista del menu"<<endl;
+    cout<<"Se ha liberado toda la memoria necesaria"<<endl;
 }
 
 void Menu::cargarDatos()
 {
     ifstream archivoObjetos;
-
+    //Apertura del archivo
     archivoObjetos.open(nombreArchivo.c_str(),ios::in);
 
     if(!archivoObjetos.fail())
@@ -105,33 +106,45 @@ void Menu::agregarObjeto()
     double n1,n2;
     Figura* pObjeto;
     cout<<"Ingrese la letra del objeto: ";cin>>letra;
-    switch(letra)
+    switch(toupper(letra))
     {
         case RECTANGULO:
             cout<<"\nIngrese la base: ";cin>>n1;
             cout<<"Ingrese la altura: ";cin>>n2;
 
+            //Asigno el puntero a un espacio en memoria
             pObjeto = new Rectangulo(n1,n2);
+
             // Inserto el puntero al objeto en la lista
             listaObjetos.insertar(pObjeto);
+            cout<<"Se creo un rectangulo correctamente! "<<endl;
             break;
 
         case TRIANGULO:
             cout<<"\nIngrese la base: ";cin>>n1;
             cout<<"Ingrese la altura: ";cin>>n2;
 
+            //Asigno el puntero a un espacio en memoria
             pObjeto = new Triangulo(n1,n2);
-
+            // Inserto el puntero al objeto en la lista
             listaObjetos.insertar(pObjeto);
+            cout<<"Se creo un triangulo correctamente! "<<endl;
             break;
 
         case CIRCULO:
             cout<<"\nIngrese el radio: ";cin>>n1;
-            pObjeto = new Circulo(n1);
-            // Inserto el puntero al objeto en la lista
 
+            //Asigno el puntero a un espacio en memoria
+            pObjeto = new Circulo(n1);
+
+            // Inserto el puntero al objeto en la lista
             listaObjetos.insertar(pObjeto);
+            cout<<"Se creo un circulo correctamente! "<<endl;
             break;
+
+        default:
+            cout<<"No existe ese objeto ! "<<endl;
+
             }
     }
 
@@ -140,7 +153,7 @@ void Menu::agregarObjeto()
 void Menu::listarObjetos()
 {
     for(unsigned i = 1 ; i <= listaObjetos.get_tam();i++){
-        cout<<"N°:"<<i<<endl;
+        cout<<"Numero: "<<i<<endl;
         listaObjetos.get_dato(i)->mostrarDatos();
     }
 }
@@ -183,15 +196,14 @@ void Menu::superficieMinima()
     cout<<"Su superficie es de : "<<superMinima<<endl; //Muestra la superficie minima
 }
 
-
 void Menu::mostrarOpciones()
 {
     cout<<"\n-------Bienvenido , ingrese una opcion---"<<endl;
-    cout<<"\n1- Consultar qué objeto en determinada posición"<<endl;
-    cout<<"\n2- Dar de baja el objeto de cierta posición"<<endl;
+    cout<<"\n1- Consultar objeto en determinada posicion"<<endl;
+    cout<<"\n2- Dar de baja el objeto de cierta posicion"<<endl;
     cout<<"\n3- Agregar un nuevo objeto de forma manual"<<endl;
     cout<<"\n4- Listar todos los objetos               "<<endl;
-    cout<<"\n5- Indicar la superficie máxima           "<<endl;
-    cout<<"\n6- Indicar la superficie mínima           "<<endl;
-    cout<<"\n0 - Salir"<<endl;
+    cout<<"\n5- Indicar la superficie maxima           "<<endl;
+    cout<<"\n6- Indicar la superficie minima           "<<endl;
+    cout<<"\n0- Salir"<<endl;
 }

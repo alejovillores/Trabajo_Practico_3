@@ -1,13 +1,11 @@
 #include"triangulo.h"
 #include<iostream>
-const int AREA = 2;
+
 
 Triangulo::Triangulo(double b, double h)
 {
     base = b;
     altura = h;
-    cout<<"Se creo un triangulo"<<endl;
-
 }
 
 double Triangulo::getAltura()
@@ -22,7 +20,7 @@ double Triangulo::getBase()
 
 void Triangulo ::mostrarDatos()
 {
-    cout<<"\nSoy un Triangulo !"<<endl;
+    cout<<"\nObjeto: Triangulo"<<endl;
     cout<<"Base: "<<base<<endl;
     cout<<"Altura: "<<altura<<endl;
 }

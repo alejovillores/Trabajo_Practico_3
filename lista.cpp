@@ -33,17 +33,14 @@ void Lista::insertar(Dato d)
 Dato Lista::get_dato(unsigned pos)
 {
     Nodo* paux = primero;
-    //cout<<"\nDireccion del Puntero auxiliar: "<<paux<<endl;
 
     unsigned i = 1;
     while (i < pos && paux->get_siguiente())
     {
         paux = paux->get_siguiente();
-        //cout<<"\nDireccion nueva del Puntero auxiliar: "<<paux<<endl;
         i++;
     }
-    //cout<<"\nTermina el ciclo: "<<endl;
-    //cout<<"\nDireccion del Puntero auxiliar: "<<paux<<endl;
+
     return paux->get_dato();
 }
 void Lista::del_dato(unsigned pos)

@@ -8,7 +8,7 @@ const double PI = 3.14;
 Circulo::Circulo( double r)
 {
     radio = r;
-    cout<<"Se creo un circulo"<<endl;
+
 }
 
 double Circulo::getRadio()
@@ -18,7 +18,8 @@ double Circulo::getRadio()
 
 void Circulo::mostrarDatos()
 {
-    cout<<"\n Soy un Circulo"<<endl;
+    cout<<"\nObjeto : Circulo"<<endl;
+    cout<<"Radio : "<<radio<<endl;
 }
 
 double Circulo::calcularArea()

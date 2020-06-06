@@ -3,7 +3,7 @@
 
 Nodo::Nodo(Dato d)
 {
-    cout << "Se construye el nodo "<<endl;
+
     //EL dato es un puntero a objeto
     dato = d;
     psig = 0;
@@ -11,7 +11,7 @@ Nodo::Nodo(Dato d)
 }
 Nodo::~Nodo()
 {
-    cout << "Se destruye el nodo "<<endl;
+    //Como el dato tiene memoria reservada , debo liberarla
     delete dato;
 }
 void Nodo::set_dato(Dato d)

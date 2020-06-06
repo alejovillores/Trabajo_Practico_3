@@ -1,6 +1,7 @@
 #ifndef TRIANGULO_H_INCLUDED
 #define TRIANGULO_H_INCLUDED
 #include"figuras.h"
+const int AREA = 2;
 
 class Triangulo : public Figura
 {
@@ -30,7 +31,7 @@ public: //Metodos
     //POST: Devuelve el area de la forma
     double calcularArea();
 
-    //~Triangulo();
+
 };
 
 

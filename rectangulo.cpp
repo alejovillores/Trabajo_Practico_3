@@ -5,7 +5,7 @@ Rectangulo::Rectangulo(double b, double h)
 {
     base = b;
     altura = h;
-    cout<<"Se creo un rectangulo"<<endl;
+
 }
 
 double Rectangulo::getAltura()
@@ -20,7 +20,9 @@ double Rectangulo::getBase()
 
 void Rectangulo::mostrarDatos()
 {
-    cout<<"\n Soy un Rectangulo"<<endl;
+    cout<<"\nObjeto: Rectangulo "<<endl;
+    cout<<"Base: "<<base<<endl;
+    cout<<"Altura: "<<altura<<endl;
 }
 
 double Rectangulo::calcularArea()

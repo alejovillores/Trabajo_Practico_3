@@ -24,7 +24,7 @@ public://Metodos
     //POST: Devuelve el area de la forma
     double calcularArea();
 
-    //~Circulo();
+
 };
 
 
