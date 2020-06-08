@@ -1,12 +1,13 @@
 # depslib dependency file v1.0
-1591469945 source:c:\users\itenet\documents\trabajo_practico_3\circulo.cpp
+1591639733 source:c:\users\itenet\documents\trabajo_practico_3\circulo.cpp
 	"circulo.h"
-	<iostream>
 
-1591478577 c:\users\itenet\documents\trabajo_practico_3\circulo.h
+1591639598 c:\users\itenet\documents\trabajo_practico_3\circulo.h
 	"figuras.h"
+	<iostream>
+	<iomanip>
 
-1591381081 c:\users\itenet\documents\trabajo_practico_3\figuras.h
+1591639130 c:\users\itenet\documents\trabajo_practico_3\figuras.h
 
 1591468387 source:c:\users\itenet\documents\trabajo_practico_3\lista.cpp
 	"lista.h"
@@ -17,10 +18,10 @@
 1591463509 c:\users\itenet\documents\trabajo_practico_3\nodo.h
 	"figuras.h"
 
-1591485206 source:c:\users\itenet\documents\trabajo_practico_3\menu.cpp
+1591639758 source:c:\users\itenet\documents\trabajo_practico_3\menu.cpp
 	"menu.h"
 
-1591469657 c:\users\itenet\documents\trabajo_practico_3\menu.h
+1591638518 c:\users\itenet\documents\trabajo_practico_3\menu.h
 	"lista.h"
 	"circulo.h"
 	"triangulo.h"
@@ -28,26 +29,30 @@
 	<iostream>
 	<fstream>
 	<string>
+	<iomanip>
 
-1591478563 c:\users\itenet\documents\trabajo_practico_3\triangulo.h
+1591639589 c:\users\itenet\documents\trabajo_practico_3\triangulo.h
 	"figuras.h"
+	<iostream>
+	<iomanip>
 
-1591478586 c:\users\itenet\documents\trabajo_practico_3\rectangulo.h
+1591639586 c:\users\itenet\documents\trabajo_practico_3\rectangulo.h
 	"figuras.h"
+	<iostream>
+	<iomanip>
 
 1591468560 source:c:\users\itenet\documents\trabajo_practico_3\nodo.cpp
 	"nodo.h"
 	<iostream>
 
-1591469993 source:c:\users\itenet\documents\trabajo_practico_3\rectangulo.cpp
+1591639446 source:c:\users\itenet\documents\trabajo_practico_3\rectangulo.cpp
 	"rectangulo.h"
-	<iostream>
 
 1591470065 source:c:\users\itenet\documents\trabajo_practico_3\triangulo.cpp
 	"triangulo.h"
 	<iostream>
 
-1591485159 source:c:\users\itenet\documents\trabajo_practico_3\main.cpp
+1591638522 source:c:\users\itenet\documents\trabajo_practico_3\main.cpp
 	"menu.h"
 	<iostream>
 

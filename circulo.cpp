@@ -1,9 +1,4 @@
 #include"circulo.h"
-#include<iostream>
-
-//Constante pi para el area del circulo
-const double PI = 3.14;
-
 
 Circulo::Circulo( double r)
 {
@@ -20,6 +15,7 @@ void Circulo::mostrarDatos()
 {
     cout<<"\nObjeto : Circulo"<<endl;
     cout<<"Radio : "<<radio<<endl;
+    cout<<"Area: " << setprecision(1) << fixed <<calcularArea()<<" m "<<endl;
 }
 
 double Circulo::calcularArea()
@@ -27,4 +23,15 @@ double Circulo::calcularArea()
     //Area de un circulo --> PI x radio^2
     double area = PI *(radio * radio);
     return area;
+}
+
+
+void Circulo::mostrarFigura()
+{
+    cout<<""<<endl;
+    cout<<"  ...  "<<endl;
+    cout<<".     ."<<endl;
+    cout<<".     . "<<endl;
+    cout<<"  ...   "<<endl;
+
 }

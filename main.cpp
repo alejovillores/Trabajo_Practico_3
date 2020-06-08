@@ -1,14 +1,6 @@
 #include"menu.h"
 using namespace std;
-#include<iostream>
 
-const int SALIR = 0;
-const int CONSULTAR =1;
-const int ELIMINAR = 2;
-const int AGREGAR =3 ;
-const int LISTAR = 4;
-const int SUP_MAX =5;
-const int SUP_MIN = 6;
 
 int main()
 {
@@ -55,11 +47,13 @@ int main()
             default: //Default por si el usuario ingresa un numero que no esta.
                 cout<<"No se encuentra esa opcion"<<endl;
         }
+
         //Pausa la pantalla
         system("PAUSE");
         //Limpia la pantalla
         system("CLS");
         //Se vuelve a mostrar el menu
+
         menu.mostrarOpciones();
         cout<<"Ingrese una opcion: ";cin>>opcion;
     }

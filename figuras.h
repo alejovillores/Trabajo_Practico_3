@@ -17,6 +17,10 @@ public: //Metodos
     //POST: Devuelve el area de la figura
     virtual double calcularArea() = 0;
 
+    //PRE: -
+    //POST: Muestra la figura del objeto por pantalla
+    virtual void mostrarFigura() = 0;
+
 };
 
 #endif /*FIGURAS_H_INCLUDED*/

@@ -1,6 +1,11 @@
 #ifndef RECTANGULO_H_INCLUDED
 #define RECTANGULO_H_INCLUDED
+
 #include"figuras.h"
+#include<iostream>
+
+//Libreria para el redondeo del area del objeto
+#include <iomanip>
 
 class Rectangulo : public Figura
 {
@@ -31,6 +36,8 @@ public://Metodos
     //PRE:
     //POST: Devuelve el area de la forma
     double calcularArea();
+
+    void mostrarFigura();
 
 };
 

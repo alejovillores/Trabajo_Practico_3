@@ -1,6 +1,13 @@
 #ifndef TRIANGULO_H_INCLUDED
 #define TRIANGULO_H_INCLUDED
+
 #include"figuras.h"
+#include<iostream>
+
+//Libreria para el redondeo del area del objeto
+#include <iomanip>
+
+//Constante para Area del triangulo
 const int AREA = 2;
 
 class Triangulo : public Figura
@@ -30,6 +37,8 @@ public: //Metodos
     //PRE:
     //POST: Devuelve el area de la forma
     double calcularArea();
+
+    void mostrarFigura();
 
 
 };

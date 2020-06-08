@@ -1,6 +1,14 @@
 #ifndef CIRCULO_H_INCLUDED
 #define CIRCULO_H_INCLUDED
+
 #include"figuras.h"
+#include<iostream>
+
+//Libreria para el redondeo del area del objeto
+#include <iomanip>
+
+//Constante pi para el area del circulo
+const double PI = 3.14;
 
 class Circulo : public Figura
 {
@@ -24,7 +32,7 @@ public://Metodos
     //POST: Devuelve el area de la forma
     double calcularArea();
 
-
+    void mostrarFigura();
 };
 
 
