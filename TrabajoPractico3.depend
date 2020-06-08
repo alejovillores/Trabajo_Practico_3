@@ -17,7 +17,7 @@
 1591463509 c:\users\itenet\documents\trabajo_practico_3\nodo.h
 	"figuras.h"
 
-1591470096 source:c:\users\itenet\documents\trabajo_practico_3\menu.cpp
+1591485206 source:c:\users\itenet\documents\trabajo_practico_3\menu.cpp
 	"menu.h"
 
 1591469657 c:\users\itenet\documents\trabajo_practico_3\menu.h
@@ -45,5 +45,9 @@
 
 1591470065 source:c:\users\itenet\documents\trabajo_practico_3\triangulo.cpp
 	"triangulo.h"
+	<iostream>
+
+1591485159 source:c:\users\itenet\documents\trabajo_practico_3\main.cpp
+	"menu.h"
 	<iostream>
 
